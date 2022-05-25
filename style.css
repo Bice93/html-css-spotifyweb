@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue: #141922;
+    --lightblack: #282828;
+    --grey: #7d7f84;
+    --lime: #adff2f;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ***************************************
+****************MAIN******************* */
+#box-main{
+    width: 100vw;
+    height: calc(100vh - 70px);
+    background-color: lightseagreen;
+    display: flex;
+}
+
+.container-menu{
+    width: 15%;
+    background-color: lightcoral;
+    overflow: hidden;
+}
+
+.container-page{
+    width: 85%;
+    background-color: lightgoldenrodyellow;
+    overflow: auto;
+}
+
+
+
+
+/* ***************************************
+***************FOOTER************** */
+#box-footer{
+    width: 100vw;
+    height: 70px;
+    background-color: lightblue;
+}
+
+
+
+
+
+
+/* ***************************************
+***************MEDIA QUERY************** */
+
+
+
