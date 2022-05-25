@@ -24,11 +24,47 @@ body {
     display: flex;
 }
 
+/* -----------------------------------------
+            menu
+----------------------------------------- */
+
 .container-menu{
     width: 15%;
     background-color: lightcoral;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.box-menu{
+    width: 100%;
+    background-color: lightsalmon;
+    border: 1px solid black;
+}
+
+.box-playlist{
+    width: 100%;
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+
+.box-app{
+    width: 100%;
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+
+
+.icon-menu{
+    transform: scale(0.1);
+    list-style: none;
+}
+
+
+
+/* -----------------------------------------
+            corpo pagina
+----------------------------------------- */
 
 .container-page{
     width: 85%;
