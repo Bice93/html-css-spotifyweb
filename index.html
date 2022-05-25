@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Spotify</title>
 </head>
@@ -15,15 +16,51 @@
     <main id="box-main">
         <div class="container-menu">
             <div class="box-menu">
+                <div class="logo">
+                    <img class="icon-menu-logo" src="./img/logo-small.svg" alt="favicon">
+                    <img class="icon-logo" src="./img/logo.svg" alt="">
+                </div>
+
                 <ul class="list-icon-menu">
-                    <li class="icon-menu"><img src="./img/logo-small.svg" alt="favicon"></li>
-                    <li class="icon-menu"><img src="./img/home.svg" alt="home" ></li>
-                    <li class="icon-menu"><img src="./img/search.svg" alt="search"></li>
-                    <li class="icon-menu"><img src="./img/libreria.svg" alt="libreria"></li>
+                    <li class="icon-menu">
+                        <img src="./img/home.svg" alt="home" >
+                        <span class="text-menu-hidden">Home</span>
+                    </li>
+                    <li class="icon-menu">
+                        <img src="./img/search.svg" alt="search">
+                        <span class="text-menu-hidden">Cerca</span>
+                    </li>
+                    <li class="icon-menu">
+                        <img src="./img/libreria.svg" alt="libreria">
+                        <span class="text-menu-hidden">La tua libreria</span>
+                    </li>
                 </ul>
             </div>
-            <div class="box-playlist">TESTO PLAYLIST</div>
-            <div class="box-app">TESTO INSTALLA APP</div>
+
+            <div class="box-playlist">
+                <h4>PLAYLIST</h4>
+                <ul class="list-playlist">
+                    <li class="item-list-playlist-special"><i class="fa-solid fa-square-plus"></i>Crea Playlist</li>
+                    <li class="item-list-playlist">Nome Playlist</li>
+                    <li class="item-list-playlist">Nome Playlist</li>
+                    <li class="item-list-playlist">Nome Playlist</li>
+                    <li class="item-list-playlist">Nome Playlist</li>
+                    <li class="item-list-playlist">Nome Playlist</li>
+                    <li class="item-list-playlist">Nome Playlist</li>
+                    <li class="item-list-playlist">Nome Playlist</li>
+                </ul>
+            </div>
+
+            <div class="box-app">
+                <div class="download download-app">
+                    <img src="./img/download.svg" alt=""><span class="text-download">Installa app</span>
+                </div>
+
+                <div class="download download-profile">
+                    <img src="./img/profile.svg" alt=""><span class="text-download">John Doe</span>
+                </div>
+                
+            </div>
             
         </div>
 

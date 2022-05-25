@@ -29,37 +29,143 @@ body {
 ----------------------------------------- */
 
 .container-menu{
-    width: 100vw;
-    max-width: 15%;
+    width: 20%;
     background-color: lightcoral;
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
 }
-
+/* --------------box-menu------------------ */
 .box-menu{
     width: 100%;
     background-color: lightsalmon;
     border: 1px solid black;
 }
 
-.box-playlist{
+.logo{
     width: 100%;
+    text-align: center;
+}
+
+.icon-menu-logo{
+    width: 25px;
+    height: 25px;
+    margin: 5px 0;
+}
+
+.icon-logo{
+    width: 60%;
+    display: none;
+}
+
+.list-icon-menu{
+    text-align: center;
+    color: var(--grey);
+}
+
+.icon-menu img{
+    width: 25px;
+    height: 25px;
+    list-style: none;
+    filter: invert(0.5);
+    margin: 2px auto;
+} 
+
+.text-menu-hidden{
+    display: none;
+    padding-left: 10px;
+    font-size: 13px;
+    font-weight:500;
+}
+
+.icon-menu{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+/* ---------box playlist------------- */
+.box-playlist{
+    display: none;
+    width: 100%;
+    padding: 10px;
     background-color: antiquewhite;
     border: 1px solid black;
+    overflow: auto;
 }
+
+.box-playlist h4{
+    color: white;
+    margin: 5px 0;
+}
+
+.list-playlist{
+    list-style: none;
+}
+
+.item-list-playlist-special{
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--grey);
+    display: flex;
+    align-items: center;
+}
+
+.item-list-playlist-special i{
+    font-size: 40px;
+    padding-right: 10px;
+}
+
+.item-list-playlist{
+    margin: 20px 0;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--grey);
+}
+
+/* -------------box app----------- */
 
 .box-app{
     width: 100%;
     background-color: antiquewhite;
     border: 1px solid black;
+    padding: 10px;
 }
 
-.icon-menu{
-    transform: scale(0.1);
-    list-style: none;
-} 
+.download{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
 
+.download img{
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
+.download-app img{
+    filter: invert(0.5);
+}
+.text-download{
+    display: none;
+}
+.download-app .text-download{
+    padding-left: 5px;
+    font-size: 13px;
+}
+
+.download-profile img{
+    background-color: var(--grey);
+    border-radius: 100%;
+}
+
+.download-profile .text-download{
+    font-weight: 500;
+    color: white;
+    padding-left: 5px;
+}
 
 
 
@@ -69,33 +175,31 @@ body {
 ----------------------------------------- */
 
 .container-page{
-    width: 100%;
-    max-width: 85%;
+    width: 80%;
     background-color: lightgoldenrodyellow;
     overflow: auto;
 }
 
 .row-upgrade{
     width: 100%;
-    height: 70px;
-    background-color: black;
-    position: fixed;
-    z-index: 1;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.8);
+    line-height: 60px;
 }
 
 #button{
     text-align: end;
-    padding-right: 20px;
+    padding-right: 5px;
 }
 
 #button-up{
     color: white;
-    line-height: 65px;
+    line-height: 50px;
     border-radius: 30px;
     font-weight: 600;
-    font-size: 12px;
+    font-size: 10px;
     text-decoration: none;
-    padding: 10px 30px;
+    padding: 7px 25px;
     border: 1px solid white;
 }
 
@@ -110,6 +214,47 @@ body {
 
 /* ***************************************
 ***************MEDIA QUERY************** */
+@media all and (min-width: 601px) {
+    .icon-menu-logo{
+        display: none;
+    }
+    .icon-logo{
+        display: block;
+        padding: 10px;
+    }
+    .list-icon-menu{
+        text-align:left;
+        padding-left: 10px;
+    }
+    .text-menu-hidden{
+        display: block;
+    }
+    .icon-menu img{
+        margin: 2px 0;
+    }
 
+    .box-playlist{
+        display: block;
+    }
+
+    .download-app{
+    border-bottom: 1px solid var(--grey);
+    } 
+
+    .download img{
+        margin: 0;
+    }
+    .text-download{
+        display: block;
+    }
+
+}
+
+
+
+
+@media all and (min-width: 701px) {
+    
+}
 
 
