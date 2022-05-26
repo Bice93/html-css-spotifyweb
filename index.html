@@ -1,19 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Spotify</title>
 </head>
+
 <body>
-    <!-- ************************************************
-                    MAIN
+    <!--                     MAIN
     ************************************************ -->
     <main id="box-main">
+        <!-- /////////////////////////////////////////////
+                        CONTENITORE SINISTRA
+                ///////////////////////////////////////// -->
         <div class="container-menu">
             <div class="box-menu">
                 <div class="logo">
@@ -23,7 +31,7 @@
 
                 <ul class="list-icon-menu">
                     <li class="icon-menu">
-                        <img src="./img/home.svg" alt="home" >
+                        <img src="./img/home.svg" alt="home">
                         <span class="text-menu-hidden">Home</span>
                     </li>
                     <li class="icon-menu">
@@ -38,17 +46,20 @@
             </div>
 
             <div class="box-playlist">
-                <h4>PLAYLIST</h4>
-                <ul class="list-playlist">
-                    <li class="item-list-playlist-special"><i class="fa-solid fa-square-plus"></i>Crea Playlist</li>
-                    <li class="item-list-playlist">Nome Playlist</li>
-                    <li class="item-list-playlist">Nome Playlist</li>
-                    <li class="item-list-playlist">Nome Playlist</li>
-                    <li class="item-list-playlist">Nome Playlist</li>
-                    <li class="item-list-playlist">Nome Playlist</li>
-                    <li class="item-list-playlist">Nome Playlist</li>
-                    <li class="item-list-playlist">Nome Playlist</li>
-                </ul>
+                <div class="playlist-hidden">
+                    <h4>PLAYLIST</h4>
+                    <ul class="list-playlist">
+                        <li class="item-list-playlist-special"><i class="fa-solid fa-square-plus"></i>Crea Playlist</li>
+                        <li class="item-list-playlist">Nome Playlist</li>
+                        <li class="item-list-playlist">Nome Playlist</li>
+                        <li class="item-list-playlist">Nome Playlist</li>
+                        <li class="item-list-playlist">Nome Playlist</li>
+                        <li class="item-list-playlist">Nome Playlist</li>
+                        <li class="item-list-playlist">Nome Playlist</li>
+                        <li class="item-list-playlist">Nome Playlist</li>
+                    </ul>
+                </div>
+
             </div>
 
             <div class="box-app">
@@ -59,24 +70,27 @@
                 <div class="download download-profile">
                     <img src="./img/profile.svg" alt=""><span class="text-download">John Doe</span>
                 </div>
-                
+
             </div>
-            
+
         </div>
+        <!-- /////////////////////////////////////////////
+                        CONTENITORE DESTRA
+                ///////////////////////////////////////// -->
 
         <div class="container-page">
             <div class="row-upgrade">
-                <div id="button"><a href="#" id="button-up">EFFETTUA L'UPGRADE</a></div>
+                <div id="button"><a href="#" id="button-up">EFFETTUA L'UPGRADE</a>
+                </div>
             </div>
-        </div>
     </main>
 
 
-    <!-- ************************************************
-                    FOOTER
+    <!--                    FOOTER
     ************************************************ -->
     <footer id="box-footer">
         TESTO FOOTER
     </footer>
 </body>
+
 </html>

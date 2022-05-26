@@ -22,24 +22,27 @@ body {
     height: calc(100vh - 70px);
     background-color: lightseagreen;
     display: flex;
+    overflow: hidden;
 }
 
+/* ///////////////////////////////////
+            CONTENITORE SINISTRA
+////////////////////////////////////// */
+
 /* -----------------------------------------
-            menu
+                menu
 ----------------------------------------- */
 
 .container-menu{
-    width: 20%;
-    background-color: lightcoral;
-    overflow: hidden;
+    width: 50px;
+    background-color: black;
+    /* overflow: hidden; */
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 /* --------------box-menu------------------ */
 .box-menu{
-    width: 100%;
-    background-color: lightsalmon;
-    border: 1px solid black;
+    flex-basis: 150px;
 }
 
 .logo{
@@ -54,7 +57,7 @@ body {
 }
 
 .icon-logo{
-    width: 60%;
+    width: 100%;
     display: none;
 }
 
@@ -84,16 +87,16 @@ body {
 }
 
 
-
-
 /* ---------box playlist------------- */
 .box-playlist{
-    display: none;
-    width: 100%;
+    flex-basis: 700px;
+    min-height: 150px;
     padding: 10px;
-    background-color: antiquewhite;
-    border: 1px solid black;
     overflow: auto;
+}
+
+.playlist-hidden{
+    display: none;
 }
 
 .box-playlist h4{
@@ -107,7 +110,7 @@ body {
 
 .item-list-playlist-special{
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 700;
     color: var(--grey);
     display: flex;
     align-items: center;
@@ -119,7 +122,7 @@ body {
 }
 
 .item-list-playlist{
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: 13px;
     font-weight: 500;
     color: var(--grey);
@@ -128,9 +131,7 @@ body {
 /* -------------box app----------- */
 
 .box-app{
-    width: 100%;
-    background-color: antiquewhite;
-    border: 1px solid black;
+    flex-basis: 150px;
     padding: 10px;
 }
 
@@ -150,10 +151,13 @@ body {
 }
 .text-download{
     display: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--grey);
 }
+
 .download-app .text-download{
     padding-left: 5px;
-    font-size: 13px;
 }
 
 .download-profile img{
@@ -168,23 +172,24 @@ body {
 }
 
 
-
+/* /////////////////////////////////////
+            CONTENITORE DESTRA
+ //////////////////////////////////////*/
 
 /* -----------------------------------------
             corpo pagina
 ----------------------------------------- */
 
 .container-page{
-    width: 80%;
+    width: calc(100% - 50px);
     background-color: lightgoldenrodyellow;
-    overflow: auto;
 }
 
 .row-upgrade{
     width: 100%;
-    height: 60px;
+    height: 70px;
     background-color: rgba(0, 0, 0, 0.8);
-    line-height: 60px;
+    line-height: 70px;
 }
 
 #button{
@@ -215,6 +220,12 @@ body {
 /* ***************************************
 ***************MEDIA QUERY************** */
 @media all and (min-width: 601px) {
+    .container-menu{
+        width: 200px;
+    }
+    .container-page{
+        width: calc(100% - 200px);
+    }
     .icon-menu-logo{
         display: none;
     }
@@ -233,7 +244,7 @@ body {
         margin: 2px 0;
     }
 
-    .box-playlist{
+    .playlist-hidden{
         display: block;
     }
 
