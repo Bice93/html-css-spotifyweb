@@ -221,6 +221,7 @@ body {
 .navigation-bar{
     width: 100%;
     margin-top: 80px;
+    padding-bottom: 10px;
 }
 
 .list-nav-bar{
@@ -240,15 +241,22 @@ body {
 }
 
 .title-section{
-    margin: 10px 0;
+    font-size: 20px;
+    color: white;
 }
 
-.box-recently{
+.subtitle-section{
+    font-size: 10px;
+    color: var(--grey);
+}
+
+.box-card-flex{
     width: 100%;
     background-color: rgb(158, 158, 241);
     display: flex; 
     flex-wrap: wrap;
     gap: 5px;
+    padding: 10px 0;
 }
 .card-played{
     width: calc(100% / 2 - 5px);
@@ -280,7 +288,9 @@ body {
     padding: 3px 0;
 }
 
-
+.image-special{
+    border-radius: 100%;
+}
 
 /* ***************************************
 ***************FOOTER************** */
