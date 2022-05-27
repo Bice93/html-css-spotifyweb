@@ -36,14 +36,8 @@ body {
 .container-menu{
     width: 50px;
     background-color: black;
-    /* overflow: hidden; */
-    display: flex;
-    flex-direction: column;
 }
 /* --------------box-menu------------------ */
-.box-menu{
-    flex-basis: 150px;
-}
 
 .logo{
     width: 100%;
@@ -79,18 +73,21 @@ body {
     padding-left: 10px;
     font-size: 13px;
     font-weight:500;
+    text-decoration: none;
+    color: var(--grey);
 }
 
 .icon-menu{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 
 /* ---------box playlist------------- */
 .box-playlist{
-    flex-basis: 700px;
-    min-height: 150px;
+    height: calc(100% - 126px - 100px);
+    min-height: 80px;
     padding: 10px;
     overflow: auto;
 }
@@ -131,7 +128,6 @@ body {
 /* -------------box app----------- */
 
 .box-app{
-    flex-basis: 150px;
     padding: 10px;
 }
 
@@ -182,7 +178,7 @@ body {
 
 .container-page{
     width: calc(100% - 50px);
-    background-color: lightgoldenrodyellow;
+    background-color: var(--blue);
     position: relative;
 }
 
@@ -200,18 +196,17 @@ body {
 #button-up{
     color: white;
     line-height: 50px;
-    border-radius: 30px;
+    border-radius: 50px;
     font-weight: 600;
     font-size: 10px;
     text-decoration: none;
-    padding: 7px 25px;
+    padding: 8px 25px;
     border: 1px solid white;
 }
 
 .box-content{
     width: 100%;
     height: 100%;
-    background-color: bisque;
     overflow: auto;
     position: absolute;
     top: 0;
@@ -221,7 +216,6 @@ body {
 .navigation-bar{
     width: 100%;
     margin-top: 80px;
-    padding-bottom: 10px;
 }
 
 .list-nav-bar{
@@ -235,9 +229,16 @@ body {
 
 .item-nav-bar{
     font-size: 11px;
+    font-weight: 600;
     margin: 1px;
     padding: 5px;
+}
+.item-nav-bar > a{
+    text-decoration: none;
     color: var(--grey);
+}
+.section-collection{
+    margin: 30px 0;
 }
 
 .title-section{
@@ -247,21 +248,19 @@ body {
 
 .subtitle-section{
     font-size: 10px;
+    font-weight: 700;
     color: var(--grey);
 }
 
 .box-card-flex{
     width: 100%;
-    background-color: rgb(158, 158, 241);
     display: flex; 
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
     padding: 10px 0;
 }
 .card-played{
-    width: calc(100% / 2 - 5px);
-    background-color: beige;
-    border: 1px solid black;
+    width: calc(100% / 2 - 10px);
 }
 
 .card-played img{
@@ -271,11 +270,11 @@ body {
 
 .card-played > .text-card{
     text-align: center;
-    background-color:rgb(151, 40, 255);
+    padding-top: 5px;
 }
 
 .title-card{
-    font-size: 13px;
+    font-size: 11px;
     font-weight: bold;
     color: white;
     padding: 3px 0;
@@ -283,7 +282,7 @@ body {
 
 .subtitle{
     font-size: 10px;
-    font-weight: bold;
+    font-weight: 500;
     color: var(--grey);
     padding: 3px 0;
 }
@@ -409,6 +408,10 @@ body {
     .container-page{
         width: calc(100% - 250px);
     }
+    .box-playlist{
+        height: calc(100% - 175px - 101px);
+    }
+
     .icon-menu-logo{
         display: none;
     }
@@ -417,7 +420,6 @@ body {
         padding: 10px;
     }
     .list-icon-menu{
-        text-align:left;
         padding-left: 10px;
     }
     .text-menu-hidden{
@@ -425,6 +427,9 @@ body {
     }
     .icon-menu img{
         margin: 2px 0;
+    }
+    .icon-menu{
+        justify-content:flex-start;
     }
 
     .playlist-hidden{
@@ -448,7 +453,7 @@ body {
 @media all and (min-width: 701px) {
     /* .....contenuto pagina destra..... */
     .card-played{
-        width: calc(100% / 4 - 5px);
+        width: calc(100% / 4 - 10px);
     }
     /* .....contenuto footer..... */
     #box-footer{
@@ -458,8 +463,17 @@ body {
 
 
 @media all and (min-width: 1101px) {
+    .item-nav-bar{
+        font-size: 13px;
+    }
     .card-played{
-        width: calc(100% / 6 - 5px);
+        width: calc(100% / 6 - 10px);
+    }
+    .title-section{
+        font-size: 25px;
+    }
+    .title-card{
+        font-size: 13px;
     }
 
     /* //////////////FOOTER////////////// */
