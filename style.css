@@ -297,7 +297,107 @@ body {
 #box-footer{
     width: 100vw;
     height: 70px;
-    background-color: lightblue;
+    background-color: var(--lightblack);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    font-size: 0.5em;
+}
+
+.box-left i, .box-right i{
+    padding: 0 2px;
+    color: white;
+}
+/* ...............box sinistro footer......... */
+.box-left{
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.image-footer{
+    width: 25%;
+}
+
+.image-footer img{
+    width: 100%
+}
+
+.box-name-song{
+    list-style: none;
+    margin: 0 5px;
+}
+
+.name-song{
+    color: white;
+    font-weight: 500;
+}
+.subtitle-song{
+    color: var(--grey);
+}
+
+#box-footer .favorites i{
+    color: var(--grey);
+}
+
+/* ...............box centrale footer......... */
+.box-center{
+    width: 40%;
+    align-self: center;
+}
+
+.row-icon{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.row-icon i{
+    color: white;
+    padding: 5px 3%;
+}
+.icon-special{
+    font-size: 1.7em;
+}
+.row-time{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.scroll{
+    width: 60%;
+    height: 3px;
+    border-radius: 20px;
+    background-color: grey;
+   
+}
+.scroll-special{
+    display: block;
+    width: 10%;
+    height: 3px;
+    border-radius: 20px;
+    background-color: white;
+}
+.time{
+    color: white;
+    font-weight: 500;
+}
+
+
+/* ...............box destro footer......... */
+.box-right{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.scroll-right{
+    width: 30%;
+}
+.special-right{
+    width: 50%;
 }
 
 /* ***************************************
@@ -345,22 +445,34 @@ body {
 }
 
 
-
-
 @media all and (min-width: 701px) {
+    /* .....contenuto pagina destra..... */
     .card-played{
         width: calc(100% / 4 - 5px);
     }
+    /* .....contenuto footer..... */
+    #box-footer{
+        font-size: 0.7em;
+    }
 }
-
-
-
 
 
 @media all and (min-width: 1101px) {
     .card-played{
         width: calc(100% / 6 - 5px);
     }
-}
 
+    /* //////////////FOOTER////////////// */
+    .box-left{
+        width: 250px;
+    }
+
+    .box-center{
+        width: 45%;
+    }
+
+    .box-right{
+        width: 250px;
+    }
+}
 
