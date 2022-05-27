@@ -17,7 +17,7 @@ body {
 
 /* ***************************************
 ****************MAIN******************* */
-#box-main{
+#box-main {
     width: 100vw;
     height: calc(100vh - 70px);
     background-color: lightseagreen;
@@ -33,51 +33,52 @@ body {
                 menu
 ----------------------------------------- */
 
-.container-menu{
+.container-menu {
     width: 50px;
     background-color: black;
 }
+
 /* --------------box-menu------------------ */
 
-.logo{
+.logo {
     width: 100%;
     text-align: center;
 }
 
-.icon-menu-logo{
+.icon-menu-logo {
     width: 25px;
     height: 25px;
     margin: 5px 0;
 }
 
-.icon-logo{
+.icon-logo {
     width: 100%;
     display: none;
 }
 
-.list-icon-menu{
+.list-icon-menu {
     text-align: center;
     color: var(--grey);
 }
 
-.icon-menu img{
+.icon-menu img {
     width: 25px;
     height: 25px;
     list-style: none;
     filter: invert(0.5);
     margin: 2px auto;
-} 
+}
 
-.text-menu-hidden{
+.text-menu-hidden {
     display: none;
     padding-left: 10px;
     font-size: 13px;
-    font-weight:500;
+    font-weight: 500;
     text-decoration: none;
     color: var(--grey);
 }
 
-.icon-menu{
+.icon-menu {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,27 +86,27 @@ body {
 
 
 /* ---------box playlist------------- */
-.box-playlist{
+.box-playlist {
     height: calc(100% - 126px - 100px);
     min-height: 80px;
     padding: 10px;
     overflow: auto;
 }
 
-.playlist-hidden{
+.playlist-hidden {
     display: none;
 }
 
-.box-playlist h4{
+.box-playlist h4 {
     color: white;
     margin: 5px 0;
 }
 
-.list-playlist{
+.list-playlist {
     list-style: none;
 }
 
-.item-list-playlist-special{
+.item-list-playlist-special {
     font-size: 15px;
     font-weight: 700;
     color: var(--grey);
@@ -113,12 +114,12 @@ body {
     align-items: center;
 }
 
-.item-list-playlist-special i{
+.item-list-playlist-special i {
     font-size: 40px;
     padding-right: 10px;
 }
 
-.item-list-playlist{
+.item-list-playlist {
     margin: 10px 0;
     font-size: 13px;
     font-weight: 500;
@@ -127,41 +128,43 @@ body {
 
 /* -------------box app----------- */
 
-.box-app{
+.box-app {
     padding: 10px;
 }
 
-.download{
+.download {
     display: flex;
     align-items: center;
     padding: 10px 0;
 }
 
-.download img{
+.download img {
     width: 20px;
     height: 20px;
     margin: 0 auto;
 }
-.download-app img{
+
+.download-app img {
     filter: invert(0.5);
 }
-.text-download{
+
+.text-download {
     display: none;
     font-size: 13px;
     font-weight: 500;
     color: var(--grey);
 }
 
-.download-app .text-download{
+.download-app .text-download {
     padding-left: 5px;
 }
 
-.download-profile img{
+.download-profile img {
     background-color: var(--grey);
     border-radius: 100%;
 }
 
-.download-profile .text-download{
+.download-profile .text-download {
     font-weight: 500;
     color: white;
     padding-left: 5px;
@@ -176,13 +179,13 @@ body {
             corpo pagina
 ----------------------------------------- */
 
-.container-page{
+.container-page {
     width: calc(100% - 50px);
     background-color: var(--blue);
     position: relative;
 }
 
-.row-upgrade{
+.row-upgrade {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     line-height: 70px;
@@ -193,7 +196,7 @@ body {
     z-index: 1;
 }
 
-#button-up{
+#button-up {
     color: white;
     line-height: 50px;
     border-radius: 50px;
@@ -204,7 +207,7 @@ body {
     border: 1px solid white;
 }
 
-.box-content{
+.box-content {
     width: 100%;
     height: 100%;
     overflow: auto;
@@ -213,12 +216,12 @@ body {
     padding: 5px 10px;
 }
 
-.navigation-bar{
+.navigation-bar {
     width: 100%;
     margin-top: 80px;
 }
 
-.list-nav-bar{
+.list-nav-bar {
     width: 100%;
     margin-top: 80px;
     display: flex;
@@ -227,73 +230,76 @@ body {
     list-style: none;
 }
 
-.item-nav-bar{
+.item-nav-bar {
     font-size: 11px;
     font-weight: 600;
     margin: 1px;
     padding: 5px;
 }
-.item-nav-bar > a{
+
+.item-nav-bar>a {
     text-decoration: none;
     color: var(--grey);
 }
-.section-collection{
+
+.section-collection {
     margin: 30px 0;
 }
 
-.title-section{
+.title-section {
     font-size: 20px;
     color: white;
 }
 
-.subtitle-section{
+.subtitle-section {
     font-size: 10px;
     font-weight: 700;
     color: var(--grey);
 }
 
-.box-card-flex{
+.box-card-flex {
     width: 100%;
-    display: flex; 
+    display: flex;
     flex-wrap: wrap;
     gap: 10px;
     padding: 10px 0;
 }
-.card-played{
+
+.card-played {
     width: calc(100% / 2 - 10px);
 }
 
-.card-played img{
+.card-played img {
     width: 100%;
     display: block;
 }
 
-.card-played > .text-card{
+.card-played>.text-card {
     text-align: center;
     padding-top: 5px;
 }
 
-.title-card{
+.title-card {
     font-size: 11px;
     font-weight: bold;
     color: white;
     padding: 3px 0;
 }
 
-.subtitle{
+.subtitle {
     font-size: 10px;
     font-weight: 500;
     color: var(--grey);
     padding: 3px 0;
 }
 
-.image-special{
+.image-special {
     border-radius: 100%;
 }
 
 /* ***************************************
 ***************FOOTER************** */
-#box-footer{
+#box-footer {
     width: 100vw;
     height: 70px;
     background-color: var(--lightblack);
@@ -304,146 +310,164 @@ body {
     font-size: 0.5em;
 }
 
-.box-left i, .box-right i{
+.box-left i,
+.box-right i {
     padding: 0 2px;
     color: white;
 }
+
 /* ...............box sinistro footer......... */
-.box-left{
+.box-left {
     width: 25%;
     display: flex;
     align-items: center;
 }
 
-.image-footer{
+.image-footer {
     width: 25%;
 }
 
-.image-footer img{
+.image-footer img {
     width: 100%
 }
 
-.box-name-song{
+.box-name-song {
     list-style: none;
     margin: 0 5px;
 }
 
-.name-song{
+.name-song {
     color: white;
     font-weight: 500;
 }
-.subtitle-song{
+
+.subtitle-song {
     color: var(--grey);
 }
 
-#box-footer .favorites i{
+#box-footer .favorites i {
     color: var(--grey);
 }
 
 /* ...............box centrale footer......... */
-.box-center{
+.box-center {
     width: 40%;
     align-self: center;
 }
 
-.row-icon{
+.row-icon {
     text-align: center;
     font-size: 1.5em;
 }
 
-.row-icon i{
+.row-icon i {
     color: white;
     padding: 5px 3%;
 }
-.icon-special{
+
+.icon-special {
     font-size: 1.7em;
 }
-.row-time{
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
+
+.row-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.scroll{
+.scroll {
     width: 60%;
     height: 3px;
     border-radius: 20px;
     background-color: grey;
-   
+
 }
-.scroll-special{
+
+.scroll-special {
     display: block;
     width: 10%;
     height: 3px;
     border-radius: 20px;
     background-color: white;
 }
-.time{
+
+.time {
     color: white;
     font-weight: 500;
 }
 
+/* //////////////EFFETTI/////////// */
+.card-played:hover {}
 
 /* ...............box destro footer......... */
-.box-right{
+.box-right {
     width: 25%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.scroll-right{
+.scroll-right {
     width: 30%;
 }
-.special-right{
+
+.special-right {
     width: 50%;
 }
 
 /* ***************************************
 ***************MEDIA QUERY************** */
 @media all and (min-width: 601px) {
-    .container-menu{
+    .container-menu {
         width: 250px;
     }
-    .container-page{
+
+    .container-page {
         width: calc(100% - 250px);
     }
-    .box-playlist{
+
+    .box-playlist {
         height: calc(100% - 175px - 101px);
     }
 
-    .icon-menu-logo{
+    .icon-menu-logo {
         display: none;
     }
-    .icon-logo{
+
+    .icon-logo {
         display: block;
         padding: 10px;
     }
-    .list-icon-menu{
+
+    .list-icon-menu {
         padding-left: 10px;
     }
-    .text-menu-hidden{
+
+    .text-menu-hidden {
         display: block;
     }
-    .icon-menu img{
+
+    .icon-menu img {
         margin: 2px 0;
     }
-    .icon-menu{
-        justify-content:flex-start;
+
+    .icon-menu {
+        justify-content: flex-start;
     }
 
-    .playlist-hidden{
+    .playlist-hidden {
         display: block;
     }
 
-    .download-app{
-    border-bottom: 1px solid var(--grey);
-    } 
+    .download-app {
+        border-bottom: 1px solid var(--grey);
+    }
 
-    .download img{
+    .download img {
         margin: 0;
     }
-    .text-download{
+
+    .text-download {
         display: block;
     }
 
@@ -451,42 +475,121 @@ body {
 
 
 @media all and (min-width: 701px) {
+
     /* .....contenuto pagina destra..... */
-    .card-played{
+    .card-played {
         width: calc(100% / 4 - 10px);
     }
+
     /* .....contenuto footer..... */
-    #box-footer{
+    #box-footer {
         font-size: 0.7em;
     }
 }
 
 
 @media all and (min-width: 1101px) {
-    .item-nav-bar{
+    .item-nav-bar {
         font-size: 13px;
     }
-    .card-played{
+
+    .card-played {
         width: calc(100% / 6 - 10px);
     }
-    .title-section{
+
+    .title-section {
         font-size: 25px;
     }
-    .title-card{
+
+    .title-card {
         font-size: 13px;
     }
 
     /* //////////////FOOTER////////////// */
-    .box-left{
+    .box-left {
         width: 250px;
     }
 
-    .box-center{
+    .box-center {
         width: 45%;
     }
 
-    .box-right{
+    .box-right {
         width: 250px;
     }
 }
 
+/* ---------------------------------------- 
+            effetti sulle card*/
+.box-image-card {
+    width: 100%;
+    position: relative;
+}
+
+.box-image-card i {
+    display: none;
+    font-size: 60px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card-played:hover i {
+    display: block;
+}
+
+.card-played:hover img {
+    opacity: 40%;
+}
+
+/* --------effetti sul testo-------- */
+#button-up:hover {
+    font-size: 12px;
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(255, 83, 223);
+    background-image: linear-gradient(-90deg, rgb(58, 192, 255), rgb(255, 83, 223));
+}
+
+.name-song:hover{
+    font-size: 13px;
+}
+
+.icon-menu a:hover {
+    color: white;
+}
+
+.icon-menu img:hover {
+    filter: invert(0);
+}
+
+.item-nav-bar a:hover {
+    color: white;
+    border-bottom: 2px solid rgb(0, 221, 0);
+}
+
+.icon-menu:hover {
+    border-left: 2px solid rgb(0, 221, 0);
+}
+
+/* ----------effetti sulle scroll-------- */
+.scroll:hover .scroll-special {
+    background-color: rgb(255, 83, 223);
+}
+
+.icon-footer:hover {
+    font-size: 20px;
+}
+
+.icon-special:hover {
+    font-size: 1.8em;
+}
+
+.icon-box-left i:hover,
+.icon-box-right i:hover {
+    font-size: 15px;
+}
+
+/* ---------------------------------------------- */
